@@ -25,3 +25,5 @@ Project selection and descriptions are curated in scripts/update-profile.mjs. If
 ## Validation
 
 `npm run check` checks asset paths, alt text, size, unsafe SVG content and credential patterns. Parse all SVGs as XML before publication. Validate workflow YAML and remote README links. Render both color schemes at desktop and mobile widths. Public-snapshot.json contains only selected public repository metadata, language totals and aggregate daily event counts.
+
+Narrow screens at 600px and below receive dedicated 480px SVG layouts with vertically stacked matrix, architecture and metrics. Desktop assets retain the horizontal dashboard arrangement.
