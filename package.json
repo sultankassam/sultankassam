@@ -1,0 +1,1 @@
+{"name":"sultankassam-profile","private":true,"type":"module","scripts":{"generate":"node scripts/update-profile.mjs","check":"node scripts/check.mjs"},"engines":{"node":">=22"}}
