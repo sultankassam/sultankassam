@@ -1,7 +1,4 @@
-<picture><source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/hero-mobile-light.svg"><source media="(max-width: 600px)" srcset="assets/hero-mobile.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
-  <img alt="Sultan Kassam — AI interfaces, software and workflows" src="assets/hero-dark.svg" width="100%">
-</picture>
+<picture><source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/hero-mobile-light.svg"><source media="(max-width: 600px)" srcset="assets/hero-mobile.svg"><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg"><source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg"><img alt="Sultan Kassam — AI interfaces, software and workflows" src="assets/hero-dark.svg" width="100%"></picture>
 
 I build conversational AI interfaces and software for practical workflows—from a voice-enabled assistant to vehicle-service operations.
 
@@ -44,4 +41,3 @@ Technologies observed in these projects; an implementation map, rather than prof
 [GitHub](https://github.com/sultankassam) · [Explore public repositories](https://github.com/sultankassam?tab=repositories)
 
 <picture><source media="(max-width: 600px) and (prefers-color-scheme: light)" srcset="assets/footer-mobile-light.svg"><source media="(max-width: 600px)" srcset="assets/footer-mobile.svg"><source media="(prefers-color-scheme: light)" srcset="assets/footer-light.svg"><img src="assets/footer.svg" width="100%" alt="Sultan Kassam — building the next system."></picture>
-
