@@ -11,7 +11,10 @@
 - Calendar parser tests cover exact totals, duplicate/missing days, unexpected private markers, malformed tooltips, streak logic and future-date exclusion.
 - Security/image validator passed: local image references, alt text, credential patterns, scripts/foreignObject/external SVG resources and size.
 - Engineering count and source-byte language ranking exclude forks, profile and contribution art. Calendar caveat visibly explains account totals include art. Real public push dates remain visible without fabricated activity labels.
-- Existing daily/manual Action retained with parser tests added. No push trigger. GitHub Actions and live profile verification are recorded after publication.
+- Existing daily/manual Action retained with parser tests added. No push trigger. Post-publication workflow run 37454232840 succeeded: tests, generation, validation and generated commit 87ce620.
+- Live profile https://github.com/sultankassam inspected at the same 12 viewport/theme combinations. All 11 README pictures loaded, correct mobile/light sources were selected and no page overflow was detected. All six rendered links returned HTTP 200, including Jarvis, AutoMod and methodology/research.
+- Live hero frames differed over time; settled normal-viewport captures confirmed name, insignia, ring geometry and calendar cells. Full-page screenshot viewport resizing can restart external SVG entrance animations; settled captures wait after the final viewport resize. This is a capture lifecycle effect, not absent live text.
+- Remote automation regenerated the true public calendar after the profile push: 108 contributions through the UTC snapshot date. Account calendar includes intentional art; no engineering productivity inference is made.
 - Portrait: source required. Contribution art: typography preview only; existing art repository and all project histories untouched.
 
 # Pass 2 validation
