@@ -1,3 +1,19 @@
+# Pass 3 verification
+
+2026-10-06. These results supersede the historical Pass 2 notes below.
+
+- Researched and captured 11 live public reference profiles plus Sultan's existing profile.
+- Local full-page Chromium screenshots at 320, 375, 390, 430, 768 and 1024 pixels, in dark and light: 12 combinations, correct source variants, no horizontal overflow, all images loaded.
+- Inspected desktop/mobile dark/light screenshots and detailed hero, identity, calendar, Jarvis and contribution-art views. Fixed boot transforms that displaced the SK ring; opacity-only entry preserves positioning.
+- Checked text bounds for all 64 SVG variants referenced by README: zero clipped text elements.
+- Parsed 105 SVGs as XML. Largest asset 24,285 bytes, below 30KB.
+- Hero name opacity changed from 0 to 1 during boot. Reduced-motion hero was immediately settled at opacity 1; reduced-motion picture sources selected still variants for animated panels.
+- Calendar parser tests cover exact totals, duplicate/missing days, unexpected private markers, malformed tooltips, streak logic and future-date exclusion.
+- Security/image validator passed: local image references, alt text, credential patterns, scripts/foreignObject/external SVG resources and size.
+- Engineering count and source-byte language ranking exclude forks, profile and contribution art. Calendar caveat visibly explains account totals include art. Real public push dates remain visible without fabricated activity labels.
+- Existing daily/manual Action retained with parser tests added. No push trigger. GitHub Actions and live profile verification are recorded after publication.
+- Portrait: source required. Contribution art: typography preview only; existing art repository and all project histories untouched.
+
 # Pass 2 validation
 
 Local validation before publication:

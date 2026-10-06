@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import {parseCalendar} from './contributions.mjs';
+const fixture=`<h2 id="js-contribution-activity-description">3 contributions</h2>${[0,1,2].map((count,i)=>`<td data-date="2026-01-0${i+1}" id="day${i}" data-level="${count}"></td><tool-tip for="day${i}">${count?count+' contributions':'No contributions'} on date.</tool-tip>`).join('')}`;
+const c=parseCalendar(fixture,2026,'2026-01-03');assert.equal(c.total,3);assert.equal(c.currentStreak,2);
+assert.throws(()=>parseCalendar(fixture.replace('3 contributions</h2>','9 contributions</h2>'),2026,'2026-01-03'));
+assert.throws(()=>parseCalendar(fixture.replace('2026-01-02','2026-01-01'),2026,'2026-01-03'));
+assert.throws(()=>parseCalendar(fixture+'private contributions',2026,'2026-01-03'));
+assert.throws(()=>parseCalendar(fixture.replace('2 contributions on','unknown on'),2026,'2026-01-03'));
+const extra=fixture+'<td data-date="2026-01-04" id="future" data-level="0"></td>';
+assert.equal(parseCalendar(extra,2026,'2026-01-03').days.length,3);
+console.log('Calendar checks: totals, gaps, duplicates, private markers, markup drift, streak and future exclusion.');

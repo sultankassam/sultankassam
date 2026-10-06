@@ -1,1 +1,1 @@
-{"name":"sultankassam-profile","private":true,"type":"module","scripts":{"generate":"node scripts/update-profile.mjs","readme":"node scripts/readme.mjs","check":"node scripts/check.mjs"},"engines":{"node":">=22"}}
+{"name":"sultankassam-profile","private":true,"type":"module","scripts":{"generate":"node scripts/update-profile.mjs","readme":"node scripts/readme.mjs","check":"node scripts/check.mjs","test":"node scripts/test-contributions.mjs","art:preview":"node scripts/contribution-art.mjs"},"engines":{"node":">=22"}}

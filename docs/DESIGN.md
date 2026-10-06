@@ -1,3 +1,25 @@
+# Pass 3 — current public-data methodology
+
+This section supersedes any Pass 1/2 descriptions below. The older notes remain as design history.
+
+The profile preserves the existing generator, responsive picture system, SK monogram, Jarvis/AutoMod panels and daily Action. The current sequence is boot → identity → calendar/current engineering signal → systems → topology → verified stack → operating model → connect. Research and rationale are in PROFILE_RESEARCH.md and DESIGN_SYSTEM.md.
+
+Engineering repository counts and language totals exclude forks, the profile repository and the explicitly documented public contribution-art repository. Current signal ranks engineering project pushed_at dates; it does not assert recent development when timestamps are old. The leading language is determined from summed public source bytes. Public project count is not a claim of production-active systems.
+
+The calendar uses GitHub's public contribution HTML with include_private=false and an explicit January 1 to UTC collection-date window. Exact counts and levels are parsed from cells and tooltips; dates must cover every elapsed day exactly once, sum to the stated GitHub total and contain no private-contribution marker. Unsupported markup fails generation without committing changed output. Future days returned by GitHub are discarded. The calendar may include contribution-art commits and is labeled accordingly next to the graphic. It is never called an engineering productivity total. Calendar streak counts consecutive nonzero days ending today, or yesterday when today is zero, and includes art. Engineering current signal excludes art.
+
+Calendar snapshot stores only dates, aggregate counts, levels and a public source URL. No authenticated repository endpoint or private repository enumeration is used. The existing bounded event chart is retained as an unused compatibility asset; it is not the annual calendar.
+
+Daily generation at 04:17 UTC / 07:17 Africa/Nairobi and workflow_dispatch are preserved. Pinned actions, contents:write, concurrency and no push trigger remain. Parser tests precede generation; the existing credential/SVG/image validator precedes commit. Only changed generated assets and the public snapshot are staged by automation. Public API failure leaves published assets intact.
+
+Time-aware editorial labels are feasible with Intl.DateTimeFormat and Africa/Nairobi, but this pass deliberately uses the generation timezone and snapshot date. A daily morning run cannot truthfully convey the reader's current session or presence. READY describes the authored interface, not a person online or system uptime. BUILD is an editorial mode.
+
+Hero boot uses a staged opacity reveal, avoiding transforms that override SVG positioning. Idle pulses/cursor and a slow decorative topology packet are not measured telemetry. Desktop calendar reveals its actual cells through a restrained wipe. Dedicated still files disable every animation and show settled output; picture sources select these for reduced motion. Desktop/mobile and dark/light assets are generated locally, use system fonts and remain under 30KB each.
+
+No suitable portrait source was supplied. Portrait source required. The existing SK mark anchors identity until a verified local image is provided; no face was fabricated or scraped. Exactly one logical Easter egg remains: // inspect the source, in desktop topology variants.
+
+Contribution art: an existing separate public repository was discovered during live inspection. This pass does not mutate it or execute historical/future art commits. design/contribution-art-preview.svg compares three font widths; the compact full-name plan fits in 51 columns. Preview approval is required before any further art execution.
+
 # Sultan Kassam / Engineering notebook
 
 The reference profile's restraint informs the spacing, but this identity is original: oversized name typography, a quiet circuit emblem, linked full-width project modules, and public-data telemetry. No external fonts, badge services, scripts in images, or fragile statistics endpoints.

@@ -23,7 +23,7 @@ export async function saveAsset(name,w,h,body,p,title){
   await mkdir(path.dirname(`assets/${name}`),{recursive:true});
   const image=svg(w,h,body,p,title);
   await writeFile(`assets/${name}`,image);
-  if(/class="(?:pulse|cursor|scan)"/.test(body))await writeFile(`assets/${name.replace('.svg','-still.svg')}`,image.replace('</style>','.pulse,.cursor,.scan{animation:none!important}</style>'));
+  if(/class="(?:pulse|cursor|scan|boot|calendar-veil|packet)"/.test(body))await writeFile(`assets/${name.replace('.svg','-still.svg')}`,image.replace('</style>','*{animation:none!important}.calendar-veil{display:none!important}</style>'));
 }
 export async function asset(name,w,h,render,title){for(const [theme,p] of Object.entries(palettes)){const file=theme==='dark'?name:name.replace('.svg','-light.svg');await saveAsset(file,w,h,render(p),p,title);}}
 export async function responsive(name,desktop,mobile,title){await asset(name,...desktop,title);await asset(name.replace('.svg','-mobile.svg'),...mobile,title);}
